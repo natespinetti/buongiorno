@@ -1,0 +1,161 @@
+.section0{
+	z-index:-90;
+}
+// .section1{
+// 	z-index:91 !important;
+// }
+
+.homenav{
+	transform:none;
+	position:relative;
+	width:50%;
+	margin-top:10px;
+	margin-bottom:10px;
+	margin-left:120px;
+}
+
+.sidenav{
+	ul{
+	z-index:100;
+	position:absolute;
+	right:1%;
+	top:90%;
+	transform:translateY(-50%);
+	list-style:none;
+	color:white;
+	font-size:1.5rem;
+	}
+	a{
+		color:white;
+	}
+	.active{
+		font-weight:800;
+
+	}
+}
+.section1{
+	z-index:50;
+}
+
+.middle{
+	vertical-align:middle;
+}
+
+@media screen and (min-width: 40em){
+		.section0bg{
+	// background-image:url("../pics/QINY7475.png");
+	position:absolute;
+	z-index:-10;
+}
+.homenav{
+	transform:scale(1.0);
+	transition:all .4s;
+	z-index:3;
+	width:90%;
+	text-align:center;
+	position:relative;
+	top:180%;
+	margin-left:0px;
+}
+.homenav:hover{
+	transform: scale(1.2);
+	}
+#logo{
+	margin-top:2rem;
+}
+
+header{
+	visibility:visible !important;
+	width:100% !important;
+}
+.slide{
+	padding-left:0rem;
+	padding-right:0rem;
+}
+
+
+	}
+a{
+	color:none;
+	text-decoration:none;
+}
+
+.section0{
+	.fp-tableCell{
+		vertical-align:baseline !important;
+	}
+	
+}
+
+
+
+
+
+// .homenav a:hover h2{
+// 	transform: scale(1.2) translate(-50%, -50%);
+
+// 	}
+// 	.homenav a:hover img{
+// 	transform: scale(1.2);
+
+// 	}
+
+
+.daily{
+	position:absolute;
+	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+  	color:white;
+  	z-index:10;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+h2 {
+    margin: 0;
+    padding: 0;
+    color: #ccc;
+    font-size: 4em;
+    overflow: hidden;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h5 {
+    margin: 0;
+    padding: 0;
+    color: #ccc;
+    font-size: 3em;
+    overflow: hidden;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+header{
+	visibility:hidden;
+	padding:0;
+	width:0%;
+}
+
+.arrow {
+	width:20%;	
+	border-radius: 40px;
+  background-color:white;
+  border: 2px solid white;
+}
+.arrow a{
+	color:white !important;
+}
+
+.arrow:hover {
+	background:rgba(178,178,178,1.0);
+	transition: 0.5s;
+	-moz-transition: 0.5s;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s; 		
+}

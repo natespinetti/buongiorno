@@ -1,0 +1,131 @@
+
+@media screen and (min-width: 40em){
+.sub{
+  position:absolute;
+  top:35%;
+  opacity:0;
+      z-index: 20;
+  animation-name: fade;
+  animation-duration: 1s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+  transform: translateY(-100%);
+}
+.subsub{
+  position:absolute;
+  top:41%;
+  opacity:0;
+      z-index: 20;
+  animation-name: fade;
+  animation-duration: 1s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+  transform: translateY(-100%);
+}
+
+@keyframes fade{
+  0% { opacity:0;}
+  100% {opacity:1;}
+}
+
+.justgrape{
+  position:relative;
+  left:10.9%;
+      // z-index: 20;
+      width:25%;
+  animation-name: slidedown;
+  animation-duration: 1s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  transform: translateY(-100%);
+}
+
+@keyframes slidedown {
+  0% { transform: translateY(-100%); }
+  100% { transform: translateY(180%); }
+}
+
+h2 a{
+  text-decoration:none;
+}
+
+h5.effect-1 {
+	opacity:.8;
+  left: 50%;
+  top: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  transition:all 0.3s;
+  
+  &:before {
+  	opacity:1;
+    top: 0;
+    left: 0;
+    width: 0;
+    color: #ffffff;
+    overflow: hidden;
+    position: absolute;
+    content: attr(data-text);
+    transition: all 0.3s;
+  }
+  
+  &:hover {
+  	transition:all 0.3s;
+  	opacity:1;
+    
+    &:before {
+      width: 100%;
+    }
+  }
+}
+
+.circle {
+  position:absolute;
+  height: 400px;
+  width: 400px;
+  left:5%;
+  bottom:0%;
+  background-color:rgba(132,138,197,.3);
+  border-radius: 50%;
+  animation-name: purpleball;
+    animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-duration: 300s;
+  animation-delay: .5s;
+  animation-fill-mode: forwards;
+  transform:translateX(100%);
+    z-index:-20 !important;
+}
+
+.circle2{
+  position:absolute;
+  height: 350px;
+  width: 350px;
+  left:5%;
+  bottom:30%;
+  background-color:rgba(254,206,140,.3);
+  border-radius: 50%;
+  animation-name: yellowball;
+    animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-duration: 300s;
+  animation-delay: .5s;
+  animation-fill-mode: forwards;
+  transform:translateX(0%);
+  z-index:-20 !important;
+}
+
+@keyframes purpleball{
+  0% {transform:translateX(110%); }
+  50%{transform:translateX(0%);}
+  100% {transform:translateX(110%);}
+}
+@keyframes yellowball{
+  0% {transform:translateX(0%); }
+  50%{transform:translateX(100%);}
+  100%{transform:translateX(0%);}
+}
+
+
+
+}
